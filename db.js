@@ -22,6 +22,6 @@ module.exports = () => {
         database: process.env.DB_DATABASE,
         port: process.env.DB_PORT
     });
-    console.log('A conexão com o database Railway funcionou!');
+    console.log('A conexão com o database funcionou!');
     return conn;
 };
