@@ -43,7 +43,7 @@ app.post('/cadastrar/pets', (req, res) => {
             ...erro, status: 400, message: `Os dados não foram gravados`
         }
         else resposta = {
-            ...resp, status: 200, message: `Sucesso: ${resp.affectedRows} linha(s) alterada(s)`
+            ...resp, status: 201, message: `Sucesso: ${resp.affectedRows} linha(s) alterada(s)`
         }
         res.json(resposta).status(200)
     })
